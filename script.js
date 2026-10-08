@@ -1,11 +1,29 @@
 /* ------------------------------------------------------------------
    Wedding invitation: doors, language rotation, countdown, event cards
-   All wording comes from content.js
+   All wording comes from data/content.json (loaded with fetch)
 ------------------------------------------------------------------ */
 (function () {
   "use strict";
 
-  var D = window.INVITE;
+  var DATA_URL = "../data/content.json";
+
+  function fail(err) {
+    if (window.console) console.error("Could not load " + DATA_URL, err);
+    var msg = document.createElement("div");
+    msg.style.cssText = "position:fixed;inset:0;z-index:999;display:flex;align-items:center;justify-content:center;padding:2rem;text-align:center;background:#f8ecdb;color:#5e2230;font-family:sans-serif;line-height:1.5";
+    msg.textContent = location.protocol === "file:"
+      ? "This page needs to be opened through a web server (not by double-clicking the file), so it can read data/content.json."
+      : "Sorry, the invitation could not be loaded. Please check data/content.json and refresh.";
+    document.body.appendChild(msg);
+    document.body.classList.remove("locked");
+  }
+
+  fetch(DATA_URL, { cache: "no-cache" })
+    .then(function (r) { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
+    .then(start)
+    .catch(fail);
+
+  function start(D) {
   var page = document.body.getAttribute("data-page") === "main" ? "main" : "guest";
   var order = D.order;
   var idx = 0;
@@ -194,9 +212,9 @@
   });
 
   /* load the Marathi and Hindi fonts early so the first switch is smooth */
-  window.addEventListener("load", function () {
-    if (!document.fonts || !document.fonts.load) return;
+  if (document.fonts && document.fonts.load) {
     ['16px "Tiro Devanagari Marathi"', '16px "Tiro Devanagari Hindi"', '400 16px Mukta', '600 16px Mukta']
       .forEach(function (f) { document.fonts.load(f, "आ").catch(function () {}); });
-  });
+  }
+  }
 })();
