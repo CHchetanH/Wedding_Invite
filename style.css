@@ -395,15 +395,6 @@ body.locked {
 		calc(var(--lift) * -0.4)
 	);
 }
-/* the initials on the name plate: your CM monogram, as a vector */
-.crest .initials {
-	width: 47%;
-	height: auto;
-	aspect-ratio: 243 / 157;
-	color: #86303f;
-	filter: drop-shadow(0 1px 0 rgba(255, 244, 220, 0.65));
-	transform: translate(-50%, -50%) translateZ(calc(var(--lift) * 5.5));
-}
 
 /* ---------- tap hint with a 5 second bar ---------- */
 .tap {
@@ -582,7 +573,7 @@ h1 {
 	line-height: 1.12;
 	color: var(--rose-deep);
 }
-h1 span {
+h1 .amp {
 	color: var(--gold);
 }
 .date {
@@ -878,6 +869,9 @@ body.swap .fx {
 }
 
 /* the little language switch (also shows when the next language is coming) */
+[hidden] {
+	display: none !important;
+}
 .langbar {
 	position: fixed;
 	z-index: 60;
@@ -963,13 +957,6 @@ body.opened .langbar {
 	margin: 16px auto 0;
 	font-size: 0.95rem;
 }
-.rsvp[hidden] {
-	display: none;
-}
-.nojs {
-	padding: 2rem 1.2rem;
-	text-align: center;
-}
 
 /* tidy line breaks: no lonely last word, and a little room around the "&" */
 .lead,
@@ -978,7 +965,7 @@ body.opened .langbar {
 h2 {
 	text-wrap: balance;
 }
-[data-h="namesHTML"] span {
+.amp {
 	display: inline-block;
 	margin: 0 0.1em;
 }
