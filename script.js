@@ -17,7 +17,7 @@
 
   var lang = "en";                  // language on screen now
   var weddingDate = new Date($("#countdown").getAttribute("data-date")).getTime();
-  var SWAP_MS = 380;                // fade-out time before the text changes
+  var SWAP_MS = 900;                // fade-out time before the text changes (same as .fx in style.css)
   var DEVANAGARI = "०१२३४५६७८९";
 
   /* ---------- 1. cover doors ---------- */

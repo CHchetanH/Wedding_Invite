@@ -23,6 +23,7 @@ loaded (or a key is missing) the English text in `index.html` simply stays.
 - **Wedding date for the countdown:** `weddingDate` in `data/content.json` (and `data-date` on `#countdown` in `index.html`). `19:30` means 7:30 PM.
 - **Seconds per language / order:** `secondsPerLanguage` and `languages` in `data/content.json`.
 - **Google Maps links:** the `href` of the "View on Google Maps" buttons in `index.html`.
+- **Parents' names:** replace the placeholder text in `groomParents` and `brideParents` (all three languages in the JSON, and the English copy in `index.html`).
 - **Add or remove an event:** copy or delete a whole `<article class="card reveal">` block in `index.html`; for a new one, add its four keys (`...Date`, `...Title`, `...Time`, `...Venue`) to each language in the JSON.
 - **Page title and link preview:** the `<title>` and `<meta>` lines at the top of `index.html` (WhatsApp does not run JavaScript, so these are not read from the JSON).
 
