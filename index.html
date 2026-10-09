@@ -24,17 +24,13 @@
 		<meta name="robots" content="noindex, nofollow" />
 		<meta name="google" content="notranslate" />
 		<link rel="stylesheet" href="style.css" />
-		<noscript
-			><style>
-				.gate {
-					display: none;
-				}
-				body.locked {
-					overflow: auto;
-					height: auto;
-				}
-			</style></noscript
-		>
+		<!-- If script.js is missing, blocked or broken, the "js" flag is removed and the plain English page shows -->
+		<script>
+			document.documentElement.classList.add("js");
+			document.addEventListener("DOMContentLoaded", function () {
+				if (!window.inviteReady) document.documentElement.classList.remove("js");
+			});
+		</script>
 	</head>
 	<body class="locked">
 		<!-- Vector pieces (SVG symbols, recolourable with CSS "color") -->
@@ -260,6 +256,12 @@
 							draggable="false"
 							decoding="async"
 						/>
+						<!-- text on the name plate -->
+						<div class="plate">
+							<span data-i18n="groom">Chetan</span>
+							<em data-i18n="weds">weds</em>
+							<span data-i18n="bride">Monika</span>
+						</div>
 					</div>
 				</div>
 
@@ -274,13 +276,17 @@
 			<button type="button" data-l="hi" lang="hi">हिन्दी<i></i></button>
 		</nav>
 
-		<main class="site">
-			<noscript
-				><p class="nojs">
-					Chetan &amp; Monika's wedding. 6 December 2026, Shree Ram Resort, Tumsar.
-				</p></noscript
-			>
+		<!-- MUSIC: put your audio file at music/invitation.mp3. The button only appears if the file exists. -->
+		<audio id="music" src="music/invitation.mp3" loop preload="metadata"></audio>
+		<button type="button" class="music" id="musicBtn" hidden aria-label="Music on or off" aria-pressed="false">
+			<svg viewBox="0 0 24 24" aria-hidden="true">
+				<path d="M3 9v6h4l5 4V5L7 9H3z" fill="currentColor" />
+				<path class="wave" d="M15.5 8.5a5 5 0 0 1 0 7M18.2 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+				<path class="mute" d="M4 4l16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+			</svg>
+		</button>
 
+		<main class="site">
 			<!-- ================= HOME ================= -->
 			<header class="hero">
 				<div class="scene" aria-hidden="true">

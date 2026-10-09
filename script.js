@@ -1,14 +1,16 @@
 /* ==================================================================
-   Wedding invitation script. Four small jobs:
+   Wedding invitation script. Five small jobs:
    1. Cover doors   open on tap, or by themselves after 5 seconds
    2. Countdown     counts down to the wedding date
    3. Scroll reveal fades sections in as you scroll
-   4. Languages     reads data/content.json and rotates Marathi,
+   4. Music         optional background music and an on/off button
+   5. Languages     reads data/content.json and rotates Marathi,
                     English, Hindi. If the file cannot be loaded, the
                     English text already written in index.html stays.
    ================================================================== */
 (function () {
   "use strict";
+  window.inviteReady = true;        // tells index.html the script is running (else it shows the plain English page)
 
   var $ = function (sel, root) { return (root || document).querySelector(sel); };
   var $$ = function (sel, root) { return Array.prototype.slice.call((root || document).querySelectorAll(sel)); };
@@ -39,6 +41,7 @@
     document.body.classList.remove("locked");
     document.body.classList.add("opened");
     onOpen();
+    playMusic();
     setTimeout(function () { gate.remove(); }, 3600);
   }
 
@@ -77,7 +80,32 @@
   }, { threshold: 0.15 });
   $$(".reveal").forEach(function (el) { reveal.observe(el); });
 
-  /* ---------- 4. languages ---------- */
+  /* ---------- 4. music (optional: needs music/invitation.mp3) ---------- */
+  var music = $("#music");
+  var musicBtn = $("#musicBtn");
+  var musicWanted = true;           // becomes false once the visitor switches it off
+
+  function playMusic() {
+    if (!music || !musicWanted || !music.paused) return;
+    var p = music.play();
+    if (p && p.catch) p.catch(function () {         // browser wants a tap first
+      var again = function () { playMusic(); };
+      document.addEventListener("pointerdown", again, { once: true });
+      document.addEventListener("keydown", again, { once: true });
+    });
+  }
+
+  if (music && musicBtn) {
+    music.addEventListener("loadedmetadata", function () { musicBtn.hidden = false; });  // file exists
+    music.addEventListener("play", function () { musicBtn.classList.add("on"); musicBtn.setAttribute("aria-pressed", "true"); });
+    music.addEventListener("pause", function () { musicBtn.classList.remove("on"); musicBtn.setAttribute("aria-pressed", "false"); });
+    musicBtn.addEventListener("click", function () {
+      musicWanted = music.paused;
+      if (music.paused) music.play().catch(function () {}); else music.pause();
+    });
+  }
+
+  /* ---------- 5. languages ---------- */
   fetch("data/content.json", { cache: "no-cache" })
     .then(function (response) {
       if (!response.ok) throw new Error("HTTP " + response.status);
