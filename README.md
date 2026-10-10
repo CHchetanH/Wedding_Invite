@@ -9,7 +9,6 @@ One static page. No build step, no framework.
 | `style.css` | Colours, fonts, layout, door animation. |
 | `script.js` | Doors, countdown, scroll fade, and swapping in the languages. |
 | `music/invitation.mp3` | Optional background music (you add this file; see `music/README.md`). |
-| `images/scenes/*.svg` | The animated vector picture at the top of each event card (haldi, sangeet, wedding, reception). They are plain SVG files with CSS animation; the card uses one with `<img class="card-art" src="images/scenes/...">`. |
 | `images/`, `fonts/` | Artwork and fonts. |
 
 ## How the languages work
