@@ -99,6 +99,10 @@
     music.addEventListener("loadedmetadata", function () { musicBtn.hidden = false; });  // file exists
     music.addEventListener("play", function () { musicBtn.classList.add("on"); musicBtn.setAttribute("aria-pressed", "true"); });
     music.addEventListener("pause", function () { musicBtn.classList.remove("on"); musicBtn.setAttribute("aria-pressed", "false"); });
+    music.addEventListener("ended", function () { musicWanted = false; });          // plays once, then stops
+    document.addEventListener("visibilitychange", function () {                      // never keep playing in the background
+      if (document.hidden) music.pause();
+    });
     musicBtn.addEventListener("click", function () {
       musicWanted = music.paused;
       if (music.paused) music.play().catch(function () {}); else music.pause();
