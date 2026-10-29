@@ -106,7 +106,7 @@
   }
 
   /* ---------- 5. languages ---------- */
-  fetch("data/content.json", { cache: "no-cache" })
+  fetch("../data/content.json", { cache: "no-cache" })
     .then(function (response) {
       if (!response.ok) throw new Error("HTTP " + response.status);
       return response.json();
