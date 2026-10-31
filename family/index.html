@@ -295,6 +295,29 @@
 		</button>
 
 		<main class="site">
+			<!-- INVITATION: invocation, welcome text and the two families (first thing on the page) -->
+			<section class="section reveal">
+				<div class="fx">
+					<p class="invocation" data-i18n="invocation">|| Shree Ganeshaya Namah ||</p>
+					<h2 data-i18n="inviteTitle">You are invited</h2>
+					<p class="lead" data-i18n="inviteBody">With the blessings of our elders and the love of our families, the wedding of Mr. Chetan and Miss Monika will be solemnised. We warmly invite you to join us and bless the couple on this auspicious occasion.</p>
+					<!-- the two families (names in data/content.json and here) -->
+					<div class="families">
+						<div class="person">
+							<p class="who" data-i18n="groom">Mr.&nbsp;Chetan</p>
+							<p class="of" data-i18n="groomParents">Son of Mr. Bhimrao Daulatrao Hatnapure &amp; Mrs. Kausalya Bhimrao Hatnapure</p>
+						</div>
+						<p class="and"><span class="amp">&amp;</span></p>
+						<div class="person">
+							<p class="who" data-i18n="bride">Miss&nbsp;Monika</p>
+							<p class="of" data-i18n="brideParents">Daughter of Mr. Omkar Gadpande (Daharwal) &amp; Mrs. Savitri Omkar Gadpande (Daharwal)</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<svg class="lotus divider" aria-hidden="true"><use href="#lotus" /></svg>
+
 			<!-- ================= HOME ================= -->
 			<header class="hero">
 				<div class="scene" aria-hidden="true">
@@ -361,27 +384,6 @@
 			</section>
 
 			<svg class="lotus divider" aria-hidden="true"><use href="#lotus" /></svg>
-
-			<!-- INVITATION TEXT -->
-			<section class="section reveal">
-				<div class="fx">
-					<p class="invocation" data-i18n="invocation">|| Shree Ganeshaya Namah ||</p>
-					<h2 data-i18n="inviteTitle">You are invited</h2>
-					<p class="lead" data-i18n="inviteBody">With the blessings of our elders and the love of our families, the wedding of Chetan and Monika will be solemnised. We warmly invite you to join us and bless the couple on this auspicious occasion.</p>
-					<!-- the two families: replace the placeholder names in data/content.json and here -->
-					<div class="families">
-						<div class="person">
-							<p class="who" data-i18n="groom">Mr.&nbsp;Chetan</p>
-							<p class="of" data-i18n="groomParents">Son of Mr. Bhimrao Daulatrao Hatnapure &amp; Mrs. Kausalya Bhimrao Hatnapure</p>
-						</div>
-						<p class="and"><span class="amp">&amp;</span></p>
-						<div class="person">
-							<p class="who" data-i18n="bride">Miss&nbsp;Monika</p>
-							<p class="of" data-i18n="brideParents">Daughter of Mr. Omkar Gadpande (Daharwal) &amp; Mrs. Savitri Omkar Gadpande (Daharwal)</p>
-						</div>
-					</div>
-				</div>
-			</section>
 
 			<!-- EVENTS: one card per event. Add or remove a whole <article> to change the list.
 			     This is the FAMILY page (all four events). guest/index.html is made from it by make_guest.py -->
