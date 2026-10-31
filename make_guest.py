@@ -20,5 +20,8 @@ page = page.replace(
 page = page.replace("This is the FAMILY page (all four events). guest/index.html is made from it by make_guest.py",
                     "This is the GUEST page. It is made from family/index.html by make_guest.py, so edit that file instead")
 
+# 3. the link-preview address of the guest page
+page = page.replace("/Wedding_Invite/family/", "/Wedding_Invite/guest/")
+
 open("guest/index.html", "w", encoding="utf-8").write(page)
 print("guest/index.html written")
