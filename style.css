@@ -763,11 +763,6 @@ body.opened .scroll-hint {
 	color: var(--rose-deep);
 	line-height: 1.2;
 }
-.small-date {
-	letter-spacing: 0.3em;
-	text-transform: uppercase;
-	font-size: 0.8rem;
-}
 .closing small {
 	opacity: 0.55;
 }
@@ -984,6 +979,13 @@ body.opened .langbar {
 	padding: 9px 22px;
 	font-size: 0.82rem;
 	letter-spacing: 0.03em;
+}
+.signoff {
+	margin-top: 16px;
+	font-family: var(--f-head);
+	font-size: 1.2rem;
+	color: var(--rose-deep);
+	text-wrap: balance;
 }
 .thanks {
 	max-width: 340px;
