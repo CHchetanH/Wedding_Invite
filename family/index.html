@@ -295,30 +295,7 @@
 		</button>
 
 		<main class="site">
-			<!-- INVITATION: invocation, welcome text and the two families (first thing on the page) -->
-			<section class="section reveal">
-				<div class="fx">
-					<p class="invocation" data-i18n="invocation">|| Shree Ganeshaya Namah ||</p>
-					<h2 data-i18n="inviteTitle">You are invited</h2>
-					<p class="lead" data-i18n="inviteBody">With the blessings of our elders and the love of our families, the wedding of Mr. Chetan and Miss Monika will be solemnised. We warmly invite you to join us and bless the couple on this auspicious occasion.</p>
-					<!-- the two families (names in data/content.json and here) -->
-					<div class="families">
-						<div class="person">
-							<p class="who" data-i18n="groom">Mr.&nbsp;Chetan</p>
-							<p class="of" data-i18n="groomParents">Son of Mr. Bhimrao Daulatrao Hatnapure &amp; Mrs. Kausalya Bhimrao Hatnapure</p>
-						</div>
-						<p class="and"><span class="amp">&amp;</span></p>
-						<div class="person">
-							<p class="who" data-i18n="bride">Miss&nbsp;Monika</p>
-							<p class="of" data-i18n="brideParents">Daughter of Mr. Omkar Gadpande (Daharwal) &amp; Mrs. Savitri Omkar Gadpande (Daharwal)</p>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<svg class="lotus divider" aria-hidden="true"><use href="#lotus" /></svg>
-
-			<!-- ================= HOME ================= -->
+<!-- ================= HOME ================= -->
 			<header class="hero">
 				<div class="scene" aria-hidden="true">
 					<img
@@ -362,13 +339,36 @@
 				</div>
 
 				<div class="hero-content fx">
-					<p class="eyebrow rise" style="--d: 1.3s" data-i18n="eyebrow">With the blessings of our families</p>
+					<p class="invocation rise" style="--d: 1.2s" data-i18n="invocation">|| Shree Ganeshaya Namah ||</p>
+					<h2 class="rise" style="--d: 1.4s" data-i18n="inviteTitle">You are invited</h2>
+					<p class="lead rise" style="--d: 1.6s" data-i18n="inviteBody1">With the blessings of our elders and the love of our families, the wedding of</p>
 					<h1 class="rise" style="--d: 1.8s"><span data-i18n="groom">Mr.&nbsp;Chetan</span> <span class="amp">&amp;</span> <span data-i18n="bride">Miss&nbsp;Monika</span></h1>
+					<p class="lead rise" style="--d: 2s" data-i18n="inviteBody2">will be solemnised. We warmly invite you to join us and bless the couple on this auspicious occasion.</p>
 					<p class="date rise" style="--d: 2s" data-i18n="date">6 December 2026</p>
 					<svg class="lotus rise" style="--d: 2.2s" aria-hidden="true"><use href="#lotus" /></svg>
 					<p class="scroll-hint rise" style="--d: 2.6s" data-i18n="scroll">Scroll down ↓</p>
 				</div>
 			</header>
+
+			<!-- FAMILIES (names and parents come from data/content.json) -->
+			<section class="section reveal">
+				<div class="fx">
+					<h2 data-i18n="familiesTitle">With the blessings of our families</h2>
+					<div class="families">
+						<div class="person">
+							<p class="who" data-i18n="groom">Mr.&nbsp;Chetan</p>
+							<p class="of" data-i18n="groomParents">Son of Mr. Bhimrao Daulatrao Hatnapure &amp; Mrs. Kausalya Bhimrao Hatnapure</p>
+						</div>
+						<p class="and"><span class="amp">&amp;</span></p>
+						<div class="person">
+							<p class="who" data-i18n="bride">Miss&nbsp;Monika</p>
+							<p class="of" data-i18n="brideParents">Daughter of Mr. Omkar Gadpande (Daharwal) &amp; Mrs. Savitri Omkar Gadpande (Daharwal)</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<svg class="lotus divider" aria-hidden="true"><use href="#lotus" /></svg>
 
 			<!-- COUNTDOWN (the date comes from data/content.json; data-date is the fallback) -->
 			<section class="section reveal">

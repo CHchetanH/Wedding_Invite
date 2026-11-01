@@ -8,7 +8,6 @@
 			"groom": "चि. चेतन",
 			"bride": "चि. सौ. कां. मोनिका",
 			"tap": "टॅप करा · Tap to open",
-			"eyebrow": "सस्नेह निमंत्रण",
 			"date": "६ डिसेंबर २०२६",
 			"scroll": "खाली स्क्रोल करा ↓",
 			"countTitle": "लग्नाला उरलेला वेळ",
@@ -18,9 +17,8 @@
 			"secs": "सेकंद",
 			"invocation": "॥ श्री गणेशाय नमः ॥",
 			"inviteTitle": "शुभविवाह निमंत्रण",
-			"inviteBody": "वडीलधाऱ्यांच्या आशीर्वादाने आणि कुटुंबीयांच्या प्रेमाने चि. चेतन आणि चि. सौ. कां. मोनिका यांचा शुभविवाह संपन्न होत आहे. या मंगल प्रसंगी आपण उपस्थित राहून वधू-वरांना आशीर्वाद द्यावेत, ही नम्र विनंती.",
 			"groomParents": "श्री. भीमराव दौलतराव हतनापुरे व सौ. कौसल्या भीमराव हतनापुरे यांचे सुपुत्र",
-			"brideParents": "श्री. ओमकार गडपांडे (दहारवाल) व सौ. सावित्री ओमकार गडपांडे (दहारवाल) यांची सुकन्या",
+			"brideParents": "श्री. ओमकार गडपांडे (डहरवाल) व सौ. सावित्री ओमकार गडपांडे (डहरवाल) यांची सुकन्या",
 			"celebTitle": "कार्यक्रम",
 			"celebSubFamily": "सर्व कार्यक्रमांसाठी आपणास सस्नेह आमंत्रण",
 			"celebSubGuest": "शुभविवाह व स्वागत समारंभासाठी आपणास सस्नेह आमंत्रण",
@@ -41,13 +39,15 @@
 			"receptionTitle": "स्वागत समारंभ",
 			"receptionDate": "सोमवार, ७ डिसेंबर २०२६",
 			"receptionTime": "सायंकाळी ७:३० ते रात्री ११:३०",
-			"receptionVenue": "शंतनू लॉन, चंद्रपूर"
+			"receptionVenue": "शंतनू लॉन, चंद्रपूर",
+			"familiesTitle": "आमच्या कुटुंबीयांच्या आशीर्वादाने",
+			"inviteBody1": "वडीलधाऱ्यांच्या आशीर्वादाने आणि कुटुंबीयांच्या प्रेमाने",
+			"inviteBody2": "यांचा शुभविवाह संपन्न होत आहे. या मंगल प्रसंगी आपण उपस्थित राहून वधू-वरांना आशीर्वाद द्यावेत, ही नम्र विनंती."
 		},
 		"en": {
 			"groom": "Mr. Chetan",
 			"bride": "Miss Monika",
 			"tap": "टॅप करा · Tap to open",
-			"eyebrow": "With the blessings of our families",
 			"date": "6 December 2026",
 			"scroll": "Scroll down ↓",
 			"countTitle": "Counting down to our big day",
@@ -57,7 +57,6 @@
 			"secs": "Secs",
 			"invocation": "|| Shree Ganeshaya Namah ||",
 			"inviteTitle": "You are invited",
-			"inviteBody": "With the blessings of our elders and the love of our families, the wedding of Mr. Chetan and Miss Monika will be solemnised. We warmly invite you to join us and bless the couple on this auspicious occasion.",
 			"groomParents": "Son of Mr. Bhimrao Daulatrao Hatnapure & Mrs. Kausalya Bhimrao Hatnapure",
 			"brideParents": "Daughter of Mr. Omkar Gadpande (Daharwal) & Mrs. Savitri Omkar Gadpande (Daharwal)",
 			"celebTitle": "Celebrations",
@@ -80,13 +79,15 @@
 			"receptionTitle": "Reception",
 			"receptionDate": "Monday, 7 December 2026",
 			"receptionTime": "7:30 PM to 11:30 PM",
-			"receptionVenue": "Shantanu Lawn, Chandrapur"
+			"receptionVenue": "Shantanu Lawn, Chandrapur",
+			"familiesTitle": "With the blessings of our families",
+			"inviteBody1": "With the blessings of our elders and the love of our families, the wedding of",
+			"inviteBody2": "will be solemnised. We warmly invite you to join us and bless the couple on this auspicious occasion."
 		},
 		"hi": {
 			"groom": "चि. चेतन",
 			"bride": "चि. सौ. कां. मोनिका",
 			"tap": "टॅप करा · Tap to open",
-			"eyebrow": "सादर आमंत्रण",
 			"date": "६ दिसंबर २०२६",
 			"scroll": "नीचे स्क्रॉल करें ↓",
 			"countTitle": "विवाह में शेष समय",
@@ -96,9 +97,8 @@
 			"secs": "सेकंड",
 			"invocation": "॥ श्री गणेशाय नमः ॥",
 			"inviteTitle": "विवाह निमंत्रण",
-			"inviteBody": "बड़ों के आशीर्वाद और परिवारजनों के स्नेह से चि. चेतन एवं चि. मोनिका का शुभ विवाह संपन्न होने जा रहा है। इस मंगल अवसर पर आप सपरिवार पधारकर वर-वधू को आशीर्वाद प्रदान करें, यही विनम्र निवेदन है।",
 			"groomParents": "श्री भीमराव दौलतराव हतनापुरे एवं श्रीमती कौशल्या भीमराव हतनापुरे के सुपुत्र",
-			"brideParents": "श्री ओमकार गडपांडे (दहारवाल) एवं श्रीमती सावित्री ओमकार गडपांडे (दहारवाल) की सुपुत्री",
+			"brideParents": "श्री ओमकार गडपांडे (डहरवाल) एवं श्रीमती सावित्री ओमकार गडपांडे (डहरवाल) की सुपुत्री",
 			"celebTitle": "कार्यक्रम",
 			"celebSubFamily": "सभी कार्यक्रमों में आपका हार्दिक स्वागत है",
 			"celebSubGuest": "विवाह एवं स्वागत समारोह में आपका हार्दिक स्वागत है",
@@ -119,7 +119,10 @@
 			"receptionTitle": "स्वागत समारोह",
 			"receptionDate": "सोमवार, ७ दिसंबर २०२६",
 			"receptionTime": "शाम ७:३० से रात ११:३० बजे तक",
-			"receptionVenue": "शांतनु लॉन, चंद्रपुर"
+			"receptionVenue": "शांतनु लॉन, चंद्रपुर",
+			"familiesTitle": "हमारे परिवारजनों के आशीर्वाद से",
+			"inviteBody1": "बड़ों के आशीर्वाद और परिवारजनों के स्नेह से",
+			"inviteBody2": "का शुभ विवाह संपन्न होने जा रहा है। इस मंगल अवसर पर आप सपरिवार पधारकर वर-वधू को आशीर्वाद प्रदान करें, यही विनम्र निवेदन है।"
 		}
 	}
 }
